@@ -75,9 +75,9 @@ group :mysql do
   gem 'mysql',        '2.8.1'
 end
 
-group :postgres do
-  gem 'pg',           '0.10.1'
-end
+#group :postgres do
+#  gem 'pg',           '0.10.1'
+#end
 
 group :sqlite do
   gem 'sqlite3-ruby', '1.3.2'
@@ -141,3 +141,5 @@ end
 Dir[File.join(File.dirname(__FILE__),'vendor/plugins/*/Gemfile')].each do |g|
   eval(File.read(g))
 end
+
+gem "therubyracer", :require => 'v8'
